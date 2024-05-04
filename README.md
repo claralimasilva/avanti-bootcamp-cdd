@@ -1,38 +1,21 @@
-# <Exploração de padrões de exercício>
+# Exploração do Conjunto de Dados de Exercícios
+## Visão Geral
 
-- Insira aqui um resumo do projeto que será construído.
-- Tente apresentar uma justificativa para o projeto.
-- É desejável que também se insira um [graphical abstract](https://www.elsevier.com/authors/tools-and-resources/visual-abstract).
+Este repositório explora o conjunto de dados "exercise" disponível na biblioteca Seaborn. O objetivo é obter insights sobre os dados e compreender a relação entre vários atributos. Seaborn é uma biblioteca de visualização em Python baseada em matplotlib, fornecendo uma interface de alto nível para desenhar gráficos estatísticos atraentes e informativos.
 
-## Desenvolvedores
- - [Clara Lima Silva](https://github.com/claralimasilva/)
+## Conjunto de Dados
 
----
+O conjunto de dados "exercise" contém informações sobre o desempenho de indivíduos durante o exercício. Inclui os seguintes atributos:
 
-> **Nota**: todo o texto abaixo é somente para entendimento do usuário do template. Por favor remova-o quando for atualizar este `README.md`.
+- ID: Identificador único para cada indivíduo
+- Diet: Tipo de dieta seguida pelo indivíduo
+- Pulse: Frequência cardíaca durante o exercício
+- Time: Tempo gasto exercitando em minutos
+- Kind: Tipo de exercício realizado (3 valores)
 
-## Funcionalidades
+## Estrutura do Projeto
 
-Esse template foi inicialmente baseado no [template de ciência de dados do cookiecutter](https://drivendata.github.io/cookiecutter-data-science/), mas ao longo do tempo várias modificações foram sendo realizadas. Atualmente o template tem as seguintes características:
- - Utilização do arquivo `pyproject.toml` como centralizador de dependências;
- - Configuração para criação de aplicação `streamlit`;
- - Utilização de [jupyter notebooks](https://jupyter.org/) para arquivos de análise;
- - Documentação com o [mkdocs](https://www.mkdocs.org/) ([material design](https://squidfunk.github.io/mkdocs-material/) theme)
-
-## Instruções
-
-### Requisitos
-
-Para utilizar este template, você precisará de um ambiente com os seguintes softwares:
- - git
- - Python 3.8
- - Poetry `1.1.13` ou superior
-
-É aconselhável o uso do `pyenv` para o gerenciamento de versões do Python.
-
-
-### Organização de diretórios
-
+A estrutura do projeto está organizada da seguinte forma:
 
 ```
 .
@@ -55,5 +38,18 @@ Para utilizar este template, você precisará de um ambiente com os seguintes so
 ├── poetry.lock        # Arquivo com sub-dependências do projeto principal
 ├── README.md          # Informações gerais do projeto
 └── tasks.py           # Arquivo com funções para criação de tarefas utilizadas pelo invoke
-
 ```
+A exploração do conjunto de dados "exercise" incluiu diversas análises estatísticas e visualizações para descobrir padrões e insights dentro dos dados. Além disso, este repositório pode servir como uma referência para utilizar a biblioteca Seaborn para tarefas de visualização e análise de dados.
+
+## Exploração de Dados
+
+Durante a análise do conjunto de dados "exercise", foram descobertos vários insights interessantes:
+
+1. Distribuição de Tempo de Exercício: A distribuição do tempo gasto exercitando revelou que a maioria dos indivíduos passa entre 30 e 60 minutos exercitando-se.
+
+2. Relação entre Dieta e Frequência Cardíaca: Observou-se uma correlação entre o tipo de dieta seguida pelo indivíduo e sua frequência cardíaca durante o exercício. Indivíduos com uma dieta específica apresentaram uma frequência cardíaca mais alta em comparação com outros grupos.
+
+3. Tipos de Exercício Preferidos: Analisando os tipos de exercício realizados, foi possível identificar os tipos mais populares entre os participantes. Essas informações podem ser úteis para personalizar programas de exercício.
+
+4. Variação de Frequência Cardíaca por Tipo de Exercício: Cada tipo de exercício mostrou uma distribuição diferente de frequência cardíaca. Alguns tipos de exercício parecem ser mais intensos do que outros, com uma frequência cardíaca média mais alta.
+
