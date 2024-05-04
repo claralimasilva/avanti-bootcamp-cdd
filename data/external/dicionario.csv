@@ -1,0 +1,6 @@
+variavel,descricao,tipo,subtipo
+id,Indivíduo,qualitativa,nominal
+diet,Tipo de dieta,qualitativa,nominal
+pulse,Batimentos cardíacos,quantitativa,discreta
+time,Tempo de exercício,quantitativa,discreta
+kind,Tipo de exercício,qualitativa,nominal
